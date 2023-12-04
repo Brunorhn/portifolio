@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
-
+:root {
+    --color-primary: #191919;
+    --color-secondary: #BED754;
+    --color-tertiary: #E3651D;
+    --color-hover: #750E21;
+}
 * {
     padding: 0;
     margin: 0;
@@ -19,28 +24,30 @@ header {
 .menu-cabecalho {
     
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
-    color: rgb(252, 249, 249);
+    color: var(--color-secondary);
     text-decoration: none;
     padding: 16px;
     
     
 }
 .menu-cabecalho:hover {    
-    color: #22D4FD;
+    color: var(--color-tertiary);
 }    
     
 body {
     
-    background-color: black;
+    background-color: var(--color-primary);
 }
 .contairner_externo {
     display: flex;
     margin-top: 2%;
     gap: 40px;
     justify-content: center;   
-    box-sizing: border-box;    
+    box-sizing: border-box;
+    align-items: center;
+    width: 100%;    
 }
 
 .container_esquerdo {
@@ -49,17 +56,18 @@ body {
     align-items:center;
     justify-content:space-evenly;
     gap: 40px;
-    max-width: 615px;
+    max-width: 650px;
     text-align:justify;   
 }
 h1 {
-    font-size: 36px;
-    color: #F6F6F6;
+    font-size: 2.25rem;
+    color: var(--color-secondary);
     font-family: 'Krona One', sans-serif;
+    text-align: start;
 }
 p {
-    font-size: 24px;
-    color: #F6F6F6;
+    font-size: 1.5rem;
+    color: var(--color-secondary);
     font-family:'Montserrat', sans-serif;
     box-sizing: content-box;    
   
@@ -72,10 +80,10 @@ p {
 }
 
 h2 {
-    color: white;
+    color: var(--color-secondary);
     text-align: center;
     font-family: 'Krona One', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
 
 }
 
@@ -86,17 +94,17 @@ h2 {
     max-width: 368px;
     padding: 22px;      
     border-radius: 10px;
-    border: 1px solid #22D4FD;   
+    border: 1px solid var(--color-tertiary);   
     color: rgb(252, 249, 249);  
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     
 }
 
 .botoes:hover {
-    background-color: #272727;
+    background-color: var(--color-primary);
     color: #22D4FD;
     
 }   
@@ -105,18 +113,30 @@ h2 {
     display: flex;
 
 }
+
 #destaque_titulo {
-    color: #22D4FD;
+    color: var(--color-tertiary);
 }
 
 
 .rodape {
     margin-top: 2%;
-    background-color: #22D4FD;
+    background-color: var(--color-tertiary);
     height: 80px;
+    width: 100%;
     text-align: center;
     font-weight: 400;
     line-height: 80px;
     
+}
+.container_esquerdo_pg2 {
+    display:flex;
+    flex-direction: column;
+    max-width: 700px;
+    min-width: 300px;
+    gap: 40px;
+}
+.paragrafo_sobre_mim {
+    text-align: justify;
 }
 
